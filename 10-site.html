@@ -14,19 +14,19 @@
       <nav>
         <ul>
           <li>
-            <a href="">Início</a>
+            <a href="#hero">Início</a>
           </li>
           <li>
-            <a href="">Sobre</a>
+            <a href="#sobre">Sobre</a>
           </li>
           <li>
-            <a href="">Instrumentos</a>
+            <a href="#instrumentos">Instrumentos</a>
           </li>
           <li>
-            <a href="">Depoimentos</a>
+            <a href="#depoimentos">Depoimentos</a>
           </li>
           <li>
-            <a href="">Contar</a>
+            <a href="">Contatos</a>
           </li>
         </ul>
       </nav>
@@ -34,7 +34,127 @@
 
     <!--Conteúdo principal-->
     <main>
-        Conteúdo principal
+        <section id="hero">
+          <h2>O som da sua vida começa aqui</h2>
+          <p>
+            Encontre as melhores marcas de violinos, tronpetes ou violões.
+          </p>
+          <img 
+            src="foto da banda.jpg" 
+            alt="banda de rock em um show usando os instrumentos musicais da Compasso Musical"
+            width="600"
+            >
+            <br><br>
+            <a href="">Ver nossas ofertas</a>
+        </section>
+
+        <!--Seção sobre-->
+        <section id="sobre">
+          <h2>Sobre a Compasso Musical</h2>
+          <p>
+            Nossa loja nasceu da paixão pela música. Nossa missão é entregar qualidade sonora tanto para quem está aprendendo os primeiros acordes, quanto músicos profissionais.
+          </p>
+          <ul>
+            <li>Todos os instrumentos são revistados por nossa equipe técnica.</li>
+            <li>Garantia estendida de fábrica.</li>
+            <li>Suporte e atendimento feito por músicos reais.</li>
+          </ul>
+        </section>
+
+        <!--Seção Instrumentos-->
+        <section id="instrumentos">
+          <h2>Cátalogos</h2>
+          <article>
+            <h3>Guitarra elétrica Stratocaster</h3>
+            <img 
+            src="https://images.unsplash.com/photo-1649520067033-ef64fee2d060" 
+            alt="Imagem da guitarra Elétrica stratocaster"
+            width="300"
+            >
+            <p>
+              <strong>Marca: </strong>Fender
+            </p>
+            <p>
+              Guitarra clássica de alata performace, ideal para rock e blues.
+            </p>
+            <p>
+              <em>Preço: R$ 3.500,00</em>
+            </p>
+            <a href="#">Adicionar ao carinho</a>
+          </article>
+
+          <article>
+            <h3>Kit bateria</h3>
+            <img 
+            src="https://images.unsplash.com/photo-1504653601220-f1a8ece25e4a" 
+            alt="Kit bateria"
+            width="300"
+            >
+            <p>
+              <strong>Marca: </strong>Perl
+            </p>
+            <p>
+              Kit de bateria preto e roxo ideal para vc.
+            </p>
+            <p>
+              <em>Preço: R$ 13.900,00</em>
+            </p>
+            <a href="#">Adicionar ao carinho</a>
+          </article>
+        </section>
+
+        <!--Seção de depoimentos-->
+        <section id="depoimentos">
+          <h2>Oque nossos clientes dizem</h2>
+          <blockquote>
+            <p>
+              "A bateria chegou super rapido aqui em cuiabá-MT e perfeitamente embalada. O som é increvel!."
+            </p>
+            <footer>
+              - <cite>Douglas Nunes, baterista </cite>
+            </footer>
+          </blockquote>
+            <p>
+              "Comprei minha primeira guitarra na Compasso Musical. O atendimento me ajudou a escolher o modelo certo!."
+           </p>
+           <footer>
+             - <cite>Maria Eduarda Ferretti, estudande de música</cite>
+           </footer>
+        </section>
+
+        <!--Seção de contatos-->
+        <section id="contatos">
+          <h2>Fale conosco</h2>
+          <p>Tem dúvidas sobre algum instrumento? Mande uma mensagem ou venha nos visitar.</p>
+          <address>
+            <p>
+              Loja Física: <strong>Centro Histórico, Cuiabá-MT</strong>
+            </p>
+          </address>
+          <form action="#">
+            <label for="nome">Nome Completo:</label>
+            <br>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+            <br><br>
+            <label for="email">E-mail</label>
+            <br>
+            <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+            <br><br>
+            <label for="departamento">Departamento</label>
+            <br>
+            <select name="departamento" id="departamento">
+              <option value="vendas">Vendas</option>
+              <option value="suporte">Suporte</option>
+              <option value="financeiro">Financeiro</option>
+              <option value="sugestao">Sugestões</option>
+            </select>
+            <br><br>
+            <label for="mensagem">Mensagem</label>
+            <textarea name="mensagem" id="mensagem" rows="10" placeholder="Digite sua mensagem"></textarea>
+            <br><br>
+            <button type="submit">Enviar Mensagem</button>
+          </form>
+        </section>
     </main>
 
     <!-- Rodapé do site-->
